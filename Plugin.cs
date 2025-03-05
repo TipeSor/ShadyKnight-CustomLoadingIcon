@@ -14,7 +14,7 @@ public class Plugin : BaseUnityPlugin
     internal static new ManualLogSource Logger;
     private ConfigEntry<string> IconSet;
     private ConfigEntry<bool> ShowGlow;
-    static string IconSetName = "BoyKisser";
+    static string IconSetName = "";
 
     private void Awake()
     {
