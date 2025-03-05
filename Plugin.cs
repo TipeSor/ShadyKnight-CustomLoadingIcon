@@ -1,6 +1,5 @@
 ﻿using BepInEx;
 using BepInEx.Logging;
-using HarmonyLib;
 
 namespace CustomLoadingIcon;
 
@@ -12,15 +11,6 @@ public class Plugin : BaseUnityPlugin
     private void Awake()
     {
         Logger = base.Logger;
-        Logger.LogInfo($"Plugin {PluginInfo.GUID} is loaded!");
-
-        Harmony harmony = new Harmony(PluginInfo.GUID);
-
-        harmony.PatchAll();
-    }
-
-    private void Start()
-    {
-        CommandHandler.InitializeCommands();
+        Logger.LogInfo($"I'm awake uwu");
     }
 }
